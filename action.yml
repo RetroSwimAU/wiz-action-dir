@@ -15,9 +15,16 @@ inputs:
     description: "IdP used for Wiz API, Auth0 or Cognito. Only needed if your account has not migrated to Cognito yet."
     required: false
     default: "cognito"
+  scan-type:
+    description: "Scan an [image] or [directory]"
+    required: true
+    default: "image"
   image:
     description: "Image to scan"
-    required: true
+    required: false
+  directory:
+    description: "Directory to scan"
+    required: false
   custom-policies:
     description: "Custom policies, comma-separated names"
     required: false
